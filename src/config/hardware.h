@@ -74,7 +74,7 @@
 //------------------------------------------------------------------------------
 #define HW_DISPLAY_WIDTH_PX 280                                                // LCD width in pixels
 #define HW_DISPLAY_HEIGHT_PX 456                                               // LCD height in pixels
-#define HW_DISPLAY_ROTATION_DEG 0                                              // Display rotation angle
+#define HW_DISPLAY_ROTATION_DEG 180                                            // Display rotation angle
 #if HW_DISPLAY_VARIANT_V2
 #define HW_DISPLAY_OFFSET_X_PX 20                                              // SH8601 framebuffer column offset
 #define HW_DISPLAY_QSPI_FREQUENCY_HZ 40000000                                  // Waveshare V2 reference QSPI clock

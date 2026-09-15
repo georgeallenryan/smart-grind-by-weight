@@ -29,6 +29,8 @@ static const uint8_t kBrightnessOff[] = {0x00};
 static const uint8_t kBrightnessFull[] = {0xFF};
 static const sh8601_lcd_init_cmd_t kV2InitCommands[] = {
     {0x11, nullptr, 0, 80},
+    // Ensure MADCTL is set so the panel is rotated 180 degrees when mounted upside-down
+    {0x36, (uint8_t[]){0xC0}, 1, 0},
     {0xC4, kCmdC4, sizeof(kCmdC4), 0},
     {0x35, kCmd35, sizeof(kCmd35), 0},
     {0x53, kCmd53, sizeof(kCmd53), 1},
